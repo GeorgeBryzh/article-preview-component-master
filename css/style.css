@@ -246,7 +246,7 @@ body {
 }
 
 .share-button:hover {
-    background: hsl(213, 6%, 39%);
+    
     cursor: pointer;
 }
 
@@ -259,46 +259,34 @@ body {
     transition: filter 0.1s;
 }
 
-.share-button:hover img {
-    filter: brightness(800%);
-}
-
 .clicked {
     background: hsl(214, 17%, 51%);
-}
-
-.clicked:hover {
-    background: hsl(210, 46%, 95%);
-
 }
 
 .clicked img {
     filter: brightness(800%);
 }
 
-.clicked:hover img {
-    filter: brightness(100%);
-
-
-}
-
 .share-links {
-    display: flex;
+
+    display:flex;
     color: hsl(212, 23%, 69%);
     background-color: hsl(217, 19%, 35%);
     align-items: center;
     position: absolute;
     transition: opacity 0.2s ease-out;
     opacity: 0;
+
 }
 
 @media screen and (min-width: 500px) {
     .share-links {
+        visibility: hidden;
+        height: 3.5rem;
         bottom: 10.5rem;
         left: 34.8rem;
         box-sizing: border-box;
         width: 16rem;
-        height: 3.5rem;
         border-radius: 10px;
         padding: 0 1rem;
         z-index: 3;
@@ -330,6 +318,7 @@ body {
         right: 0px;
         top: 0rem;
         bottom: 0rem;
+        
     }
 
 }
@@ -337,7 +326,7 @@ body {
 
 .toggle {
     opacity: 1;
-
+    visibility: visible;
 }
 
 .window-assignment-desc {
